@@ -4,8 +4,12 @@ import './Product.css'
 const Product = () => {
     return (
         <div className='product-container'>
-            <h1>Product</h1>
+            <div className="logo-text">
+                <h2>CARE YOUR BODY</h2>
+                <h4>Select today’s exercise</h4>
+            </div>
         </div>
+        
     );
 };
 

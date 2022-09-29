@@ -24,8 +24,16 @@ const Slider = () => {
             </div>
             <h4>Exercise Details</h4>
             <div className='erercise-details'>
-                
+                <div className='exercise'>
+                    <p>Exercise time</p>
+                    <p>200 second</p>
+                </div>
+                <div className='break-time'>
+                    <p>Break time</p>
+                    <p>15 second</p>
+                </div>
             </div>
+            <button>Activity Completed</button>
         </div>
     );
 };
