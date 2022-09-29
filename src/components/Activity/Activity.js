@@ -1,31 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 import './Activity.css';
-// import {toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// import axios from 'axios';
-// import '../Activity/Activity.css';
 
 const Activity = ({AllsingleProduct}) => {
-    console.log(AllsingleProduct);
+    const notify = () => toast("We Have Done.");
+    const [timeSet, SettimeSet] = useState ()
+    // console.log(AllsingleProduct);
     let totalTime = 0 ;
     for(const product of AllsingleProduct){
-        totalTime = totalTime + product.time ;
+        totalTime = totalTime + parseInt(product.time) ;
     }
-
-    // for toast part 
-    // const successToast =()=>{
-    //     toast('Success You Are Done', {
-    //         className: 'custom-toast',
-    //         draggable: true,
-    //         position: toast.POSITION.TOP_CENTER
-    //     })
-    // }
+    const handelTimeSet =(e)=>{
+        SettimeSet(e.target.innerText);
+    }
     return (
         <div className='activities-container'>
             <div>
                 <h1>Saimoom Kabir</h1>
                 <p>Phone: +8801234567890</p>
-
                 <p><small>Dhaka, Bangladesh</small></p>
             </div>
                 <div className="info">
@@ -46,11 +38,11 @@ const Activity = ({AllsingleProduct}) => {
 
                 <div className="times-taken">
                     <ul>
-                        <li>10s</li>
-                        <li>20s</li>
-                        <li>30s</li>
-                        <li>40s</li>
-                        <li>50s</li>
+                        <button onClick={handelTimeSet} >10s</button>
+                        <button onClick={handelTimeSet} >25s</button>
+                        <button onClick={handelTimeSet} >30s</button> 
+                        <button onClick={handelTimeSet} >45s</button>
+                        <button onClick={handelTimeSet} >50s</button>
                     </ul>
                 </div>
                 <h2>Exercise Details</h2>
@@ -58,11 +50,12 @@ const Activity = ({AllsingleProduct}) => {
                     <h4>Exercise time: {totalTime}s</h4>
                 </div>
                 <div className='break-time'>
-                    <h4>Break time: </h4>
+                    <h4>Break time: {timeSet} </h4>
                 </div>
-                <button  className='activity-button'>
+                <button onClick={notify} className='activity-button'>
                     Activity Completed
                 </button>
+                <ToastContainer></ToastContainer>
         </div>
     );
 };
