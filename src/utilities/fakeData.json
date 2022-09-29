@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Power Rack",
+        "des": "Power rack, also known as full rack is a massive square-like piece of equipment, which can be used for various exercise, including squats, bench presses, pull-ups and some of them also include dip station.Power racks are designed to be used for a wide range of exercises, from lower body workouts like squats to upper body workouts like bench presses and pull-ups. ",
+        "age": "24",
+        "time": "20",
+        "img": "img/cable-crossover.jpg"
+    }, 
+    {
+        "name": "Squat Rack ",
+        "des": "Half rack is basically one half of a power rack. It does not take a lot of space (in comparison to a full rack), it’s usually cheaper, but you can’t do as many different exercises with it as you can with a full rack. Usually, it’s meant for squats and pull-ups. While power (full) rack can also be used for squats, I felt obligated to separate the two.",
+        "age": "24",
+        "time": "20"
+    }, 
+    {
+        "name": "Cable Crossover Machine",
+        "des": "You can usually find a good cable cross-over machine in your local gym. From my personal experience, a proper gym owns one or two of these machines. They look like two columns that utilize linear bearings and a pulley system.On the other hand, you can train basically entire upper body with this machine.",
+        "age": "24",
+        "time": "20"
+    },
+     {
+        "name": "Power Tower",
+        "des": "Power towers are quite accessible these days, from various manufacturers in various quality. You can also get a commercially-graded one, which is of course more expensive.Another machine that definitely must have caught everyone’s attention (mainly because of its size) is the power tower. This heavy duty stand consists mainly of a dip station, pull-up bar, back-rest and sometimes sit-up bar or push-up bars that can be located at the base.",
+        "age": "24",
+        "time": "20"
+    }, 
+    {
+        "name": "Hammer Strength Machine",
+        "des": "In most well-equipment public gyms, you can come across a hammer strength machine. This particular piece of equipment uses iso-lateral technology and is specifically patented for hammer strength.It is designed to copy natural moves of a human body, while at the same time uses the combination of one-sided movements and arcs to increase one’s strength.",
+        "age": "24",
+        "time": "20"
+    }, 
+    {
+        "name": "Chest Press Machine",
+        "des": "The machine works the same pectoral muscles as a bench press, although the design is a bit different. You are actually pushing in front of you two mechanical arms loaded with heavy weight plates.While chest press machines are not really that popular, you can still find several of them online in non-commercial quality, which is great for home gym enthusiasts.",
+        "age": "24",
+        "time": "20"
+    }
+]
