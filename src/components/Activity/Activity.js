@@ -5,10 +5,10 @@ import './Activity.css';
 // import axios from 'axios';
 // import '../Activity/Activity.css';
 
-const Activity = ({singleProduct}) => {
-    console.log(singleProduct);
+const Activity = ({AllsingleProduct}) => {
+    console.log(AllsingleProduct);
     let totalTime = 0 ;
-    for(const product of singleProduct){
+    for(const product of AllsingleProduct){
         totalTime = totalTime + product.time ;
     }
 
@@ -21,14 +21,14 @@ const Activity = ({singleProduct}) => {
     //     })
     // }
     return (
-        <div className='activity-container'>
-            <div className=''>
-                <h1>Delower Hossain </h1>
-                <p>Email: hdelower68@gmial.com</p>
+        <div className='activities-container'>
+            <div>
+                <h1>Saimoom Kabir</h1>
+                <p>Phone: +8801234567890</p>
 
-                <p><small>Jhenaidha, Dhaka, Bangladesh</small></p>
+                <p><small>Dhaka, Bangladesh</small></p>
             </div>
-                <div className="my-info">
+                <div className="info">
                     <div>
                         <h1>65(kg)</h1>
                         <p>Weight</p>
@@ -38,13 +38,13 @@ const Activity = ({singleProduct}) => {
                         <p>Height</p>
                     </div>
                     <div>
-                        <h1>22(yrs)</h1>
+                        <h1>20(yrs)</h1>
                         <p>Age</p>
                     </div>
                 </div>
                 <h4>Add a Break</h4>
 
-                <div className="take-time">
+                <div className="times-taken">
                     <ul>
                         <li>10s</li>
                         <li>20s</li>
@@ -60,8 +60,8 @@ const Activity = ({singleProduct}) => {
                 <div className='break-time'>
                     <h4>Break time: </h4>
                 </div>
-                <button  className='activity-btn'>
-                    <h4 >Activity Completed</h4>
+                <button  className='activity-button'>
+                    Activity Completed
                 </button>
         </div>
     );

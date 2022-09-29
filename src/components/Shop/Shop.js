@@ -8,7 +8,7 @@ import SingleCard from '../All-Cards/SingleCard/SingleCard';
 
 const Shop = () => {
     const [products , setProducts] = useState([]);
-    const [singleProduct, setSingleProduct] = useState([])
+    const [AllsingleProduct, setAllsingleProduct] = useState([])
 
     useEffect(()=>{
         fetch('fakeData.json')
@@ -24,31 +24,31 @@ const Shop = () => {
     //     }
     // },[])
 
-    const handelAddToCart=(product) =>{
+    const AllhandelAddToCart=(product) =>{
         // console.log(product);
-        const newSingleProduct = [...singleProduct , product];
-        setSingleProduct(newSingleProduct)
+        const newAllsingleProduct = [...AllsingleProduct , product];
+        setAllsingleProduct(newAllsingleProduct)
 
         // addToDb(product._id);
     }
 
     return (
-        <div className='shop-container'>
+        <div className='shop-containers'>
             <div className="product-container">
                 <h1>Build Your Body: {products.length}</h1>
-               <h2>Select today’s exercise</h2>
-               <button className='interView-qs'>Question And Answer</button>
+               <h2>SELECT TODAY'S EXERCISE</h2>
+               <button className='interView-qs'>Ask Questions</button>
                {
                 products.map(product => <SingleCard
                     key={product._id}
                     product = {product}
-                    handelAddToCart={handelAddToCart}
+                    AllhandelAddToCart={AllhandelAddToCart}
                      ></SingleCard>)
                }
 
             </div>
-            <div className="activity-container">
-               <Activity singleProduct={singleProduct}></Activity>
+            <div className="activities-container">
+               <Activity AllsingleProduct={AllsingleProduct}></Activity>
             </div>        
         </div>
     );
