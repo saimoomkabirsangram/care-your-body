@@ -3,7 +3,6 @@ import './Shop.css';
 import React,{ useEffect, useState } from 'react';
 import Activity from '../Activity/Activity'
 import SingleCard from '../All-Cards/SingleCard/SingleCard';
-// import { addToDb, getStoredCart } from '../../fakeData.json';
 
 
 const Shop = () => {
@@ -29,7 +28,6 @@ const Shop = () => {
         const newAllsingleProduct = [...AllsingleProduct , product];
         setAllsingleProduct(newAllsingleProduct)
 
-        // addToDb(product._id);
     }
 
     return (
@@ -49,7 +47,7 @@ const Shop = () => {
             </div>
             <div className="activities-container">
                <Activity AllsingleProduct={AllsingleProduct}></Activity>
-            </div>        
+            </div> 
         </div>
     );
 };
