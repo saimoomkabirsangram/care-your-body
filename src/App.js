@@ -1,14 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Body from './components/Body/Body.js'
+import Shop from './components/Shop/Shop';
+
+// import Records from './records.json'
 
 function App() {
   return (
-    <div className="App">
-      <Body></Body>
+    <div className='App'>
+      <Shop></Shop>
     </div>
   );
 }
-
 
 export default App;
